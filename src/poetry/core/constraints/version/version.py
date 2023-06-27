@@ -166,7 +166,7 @@ class Version(PEP440Version, VersionRangeConstraint):
         pre: ReleaseTag | None = None,
         post: ReleaseTag | None = None,
         dev: ReleaseTag | None = None,
-        local: LocalSegmentType = None,
+        local: LocalSegmentType | None = None,
         *,
         epoch: int = 0,
     ) -> Version:
